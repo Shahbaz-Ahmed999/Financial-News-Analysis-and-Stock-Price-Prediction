@@ -5,13 +5,10 @@ Project Overview
 This project analyzes financial news articles and their impact on stock price prediction. The tasks include performing exploratory data analysis (EDA), extracting stock tickers using NLP, retrieving financial data, forecasting stock prices, and correlating news content with stock performance.
 
 # Dataset
-The dataset used in this project consists of financial news articles with the following columns:
+The dataset used in this project consists of financial news articles.
 
-Headlines: Titles of the financial news articles.
-
-Time: Publication date of the news article.
-
-Description: A detailed text description of the news article.
+Download the reuters.headlines file from the following link:
+https://www.kaggle.com/datasets/notlucasp/financial-news-headlines?select=reuters_headlines.csv
 
 Features
 
