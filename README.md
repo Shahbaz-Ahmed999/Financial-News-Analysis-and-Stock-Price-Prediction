@@ -11,7 +11,7 @@ Download the reuters.headlines file from the following link:
 https://www.kaggle.com/datasets/notlucasp/financial-news-headlines?select=reuters_headlines.csv
 
 # Requirements
-pandas
+pandas 
 numpy
 matplotlib
 nltk
