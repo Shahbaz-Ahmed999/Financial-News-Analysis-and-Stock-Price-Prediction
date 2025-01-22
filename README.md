@@ -21,9 +21,6 @@ Steps
 
 **Load Dataset:** Place the reuters_headlines.csv file in the appropriate directory and load it using Pandas.
 
-file_path = r"C:\Users\SHAHBAZ\Desktop\reuters_headlines.csv"
-reuters_df = pd.read_csv(file_path)
-
 **Clean Dataset:** Remove duplicates and handle invalid values in the Time column.
 
 **Visualize Trends:** Create a line plot of the number of articles over time.
