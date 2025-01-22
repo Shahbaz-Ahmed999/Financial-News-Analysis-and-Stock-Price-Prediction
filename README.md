@@ -76,31 +76,35 @@ Display metrics distributions (e.g., market capitalization).
 
 # Task 4: Stock Price Prediction
 
-**Objective** Build an LSTM model to predict multi-step future stock prices based on historical data.
+**Objective:** The task is to forecast stock prices for a specified future time period (e.g., the next 7 days) using historical data. The goal is to build a predictive model using an LSTM (Long Short-Term Memory) neural network, evaluate its performance using metrics like RMSE and MAE, and visualize the forecast alongside historical data.
 
-Steps
+**Approach:**
+**Data Collection:** Historical stock data is fetched using the yfinance library for a specific ticker symbol (MSFT) starting from 2018.
+Key columns like Open, High, Low, Close, and Volume are used.
+**Preprocessing:** Data is normalized using MinMaxScaler to bring all features to a common scale, essential for LSTM performance.
+Multi-step time-series data is prepared by creating sequences of past prices (X) to predict multiple future closing prices (y).
+**Model Design and Training:** 
+A multi-layer LSTM model is built to capture time-dependent patterns in the data.
+The model is trained on 80% of the data, while the remaining 20% is used for testing.
+**Evaluation:** Predictions are compared with actual prices for each step in the forecast horizon.
+Metrics such as RMSE (Root Mean Squared Error) and MAE (Mean Absolute Error) are calculated for each step.
+**Visualization:** Historical data is visualized to understand trends.
+Predicted vs. actual prices are plotted for individual steps and all steps together to assess model accuracy.
 
-**Fetch Data:** Use Yahoo Finance API to retrieve historical stock data for the chosen ticker (e.g., MSFT).
-
-**Visualize Data:** Plot closing prices and trading volumes over time.
-
-**Data Preparation:** Normalize data using MinMaxScaler.
-
-Prepare multi-step input-output pairs for LSTM.
-
-**Train-Test Split:**
-
-Use 80% of data for training and 20% for testing.
-
-**Build LSTM Model**
-
-Use TensorFlow/Keras to construct and train an LSTM model.
-
-Include dropout layers for regularization.
-
-**Evaluate Model:**
-
-Calculate RMSE and MAE for predictions.
-
-Visualize actual vs. predicted prices for different forecast steps.
+**Steps to Execute the Code:**
+**Install Required Libraries:** Ensure that you have all required libraries installed. Use the following command if needed:
+pip install numpy pandas yfinance matplotlib seaborn tensorflow scikit-learn
+**Fetch Stock Data:** The get_stock_data function fetches historical stock data for the specified ticker (MSFT) and start date.
+**Visualize Historical Data:** Use Seaborn and Matplotlib to plot the closing price and trading volume over time.
+**Preprocess the Data:** Normalize the data using MinMaxScaler.
+Split the data into training and testing sets (80% for training).
+Prepare input (X) and output (y) sequences for multi-step forecasting.
+**Build and Train the Model:** Define the LSTM model using the Sequential API in Keras.
+Train the model using the prepared data.
+**Make Predictions:** Predict future prices for the test set.
+Inverse-transform the scaled predictions to get actual price values.
+**Evaluate the Model:** Compute RMSE and MAE for each forecast step.
+**Visualize the Results:** Plot the actual vs. predicted prices for individual steps.
+Overlay all forecast steps for a comprehensive visualization.
+**Interpret Results:** Analyze the model's performance and identify areas for improvement.
 
