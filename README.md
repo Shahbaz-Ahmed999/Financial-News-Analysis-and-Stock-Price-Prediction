@@ -64,12 +64,9 @@ Visualizations saved or displayed inline.
 - **Resulting Dataset:**
   - The resulting dataset includes **headlines**, **descriptions**, **extracted company names**, **matched company names**, and **stock tickers**.
 
----
-
 ### Install Required Libraries
 Ensure you have the necessary Python libraries installed:
 
-```bash
 pip install pandas spacy rapidfuzz
 python -m spacy download en_core_web_sm
 
