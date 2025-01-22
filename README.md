@@ -8,7 +8,9 @@ This project analyzes financial news articles and their impact on stock price pr
 The dataset used in this project consists of financial news articles with the following columns:
 
 Headlines: Titles of the financial news articles.
+
 Time: Publication date of the news article.
+
 Description: A detailed text description of the news article.
 
 Features
