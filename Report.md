@@ -64,3 +64,45 @@ The purpose of this task is to retrieve financial data for stock tickers extract
 
 ### Output:
 - Data is saved in CSV files for further analysis or reporting.
+
+### Financial insights and forecasting results.
+## Model Performance Results
+
+The results show that the model performs better for **short-term predictions (1-3 days)**. As the forecast horizon increases, both **RMSE** and **MAE** grow, indicating larger errors. This is typical in stock price forecasting, as longer-term predictions are more uncertain due to market volatility.
+
+- **Step 1 (next day)** shows relatively accurate predictions:
+  - **RMSE** = 10.82
+  - **MAE** = 8.96
+
+- **Step 7 (7 days ahead)** shows higher errors:
+  - **RMSE** = 15.17
+  - **MAE** = 12.29
+
+### Key Causes:
+- **Stock market volatility.**
+- **Limited features** (only historical prices and volume).
+- **Model complexity** (LSTM with two layers).
+
+### Improvement Suggestions:
+- **Add more features** (e.g., technical indicators).
+- **Use deeper or hybrid models.**
+- **Incorporate external factors** like news sentiment.
+
+# Correlation of News with Stock Performance
+
+News plays a significant role in influencing stock prices by shaping investor sentiment and expectations. **Positive news** (e.g., strong earnings, mergers) typically drives stock prices up, while **negative news** (e.g., lawsuits, missed earnings) often leads to declines.
+
+The provided code attempts to analyze this relationship by:
+
+## Sentiment Analysis
+- Classifies news headlines into **positive**, **negative**, or **neutral** using **VADER**.
+
+## Named Entity Recognition (NER)
+- Extracts company names mentioned in news articles with **SpaCy**.
+
+## Stock Data Retrieval
+- Maps companies to stock tickers and fetches next-day closing prices using **yfinance**.
+
+## Impact Analysis
+- Correlates sentiment with stock price changes and visualizes the results.
+
