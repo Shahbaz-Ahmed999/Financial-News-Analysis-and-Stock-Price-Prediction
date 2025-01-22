@@ -1,9 +1,38 @@
 # Financial-News-Analysis-and-Stock-Price-Prediction
 
-## Introduction
-This project aims to analyze financial news and predict stock prices by performing exploratory data analysis (EDA), extracting stock tickers, retrieving financial data, forecasting stock prices, and correlating news with stock performance.
+Project Overview
 
-## Installation
-To run this project, you need to have Python installed. You can install the required dependencies using:
-```sh
-pip install -r requirements.txt
+This project aims to analyze financial news articles and their impact on stock price prediction. The tasks include performing exploratory data analysis (EDA), extracting stock tickers using NLP, retrieving financial data, forecasting stock prices, and correlating news content with stock performance.
+
+Features
+
+Exploratory Data Analysis (EDA):
+
+Trends over time and word frequency analysis.
+
+Cleaning and preprocessing of datasets.
+
+Stock Ticker Extraction:
+
+Extraction of company names or stock tickers from financial news articles.
+
+Mapping company names to stock tickers using APIs or datasets.
+
+Financial Data Retrieval:
+
+Historical price data retrieval using APIs like Yahoo Finance or Alpha Vantage.
+
+Collection of key financial metrics (e.g., market capitalization, P/E ratio).
+
+Stock Price Forecasting:
+
+Prediction of stock prices using time-series or machine learning models.
+
+Visualization of historical and forecasted prices.
+
+News Impact Analysis:
+
+Correlation of news tone, topics, and keywords with stock performance.
+
+Insights on the influence of news on financial indicators.
+
