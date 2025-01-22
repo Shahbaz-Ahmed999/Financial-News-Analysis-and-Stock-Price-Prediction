@@ -37,4 +37,30 @@ Analyzed the volume of articles over time, there is a strong emphasis on geopoli
 - **Resulting Dataset:**
   - The resulting dataset includes **headlines**, **descriptions**, **extracted company names**, **matched company names**, and **stock tickers**.
 
+### TASK 3
+The purpose of this task is to retrieve financial data for stock tickers extracted from the previous step, specifically:
 
+- **Historical Price Data:** Closing prices for the past year.
+- **Key Financial Metrics:** Market capitalization, P/E ratio.
+
+## Why:
+- **Historical Data:** Analyzing stock trends and price fluctuations over time is crucial for understanding market behavior and making informed decisions.
+- **Financial Metrics:** Metrics like market capitalization, P/E ratio, and dividend yield provide insights into the financial health and valuation of a company, helping assess investment opportunities.
+- **Automation:** Fetching data programmatically ensures scalability and accuracy, enabling regular updates.
+
+### Data Source:
+- **Yahoo Finance (yfinance):** Used to retrieve both historical price data and financial metrics.
+
+### Data Retrieval:
+- **Historical Prices:** Closing prices for all stock tickers are fetched for the past year, stored in a structured format.
+- **Financial Metrics:** Information like market capitalization, P/E ratio, and dividend yield is extracted for each stock ticker.
+
+### Error Handling:
+- Ensures robustness by handling missing data or API errors during retrieval.
+
+### Visualization:
+- **Market Capitalization Distribution:** Plotted to show the range and concentration of company sizes.
+- **Historical Price Trends:** Displayed using line plots for selected stocks.
+
+### Output:
+- Data is saved in CSV files for further analysis or reporting.
