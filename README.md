@@ -1,4 +1,4 @@
-# Financial-News-Analysis-and-Stock-Price-Prediction
+## Financial-News-Analysis-and-Stock-Price-Prediction
 
 Project Overview
 
@@ -38,36 +38,36 @@ Visualizations saved or displayed inline.
 
 ---
 
-### Data Collection
+# Data Collection
 - **News Sources:**
   - News headlines and descriptions are loaded from `reuters_headlines.csv`.
   - A dataset of S&P 500 companies (`sp500_companies.csv`) is used as the mapping source.
 
-### Named Entity Recognition (NER)
+# Named Entity Recognition (NER)
 - **Model Used:**
   - SpaCy’s NER model is utilized to extract organization names from article descriptions.
 - **Data Cleaning:**
   - Extracted names are cleaned to remove possessives, brackets, and quotes.
 
-### Mapping to Tickers
+# Mapping to Tickers
 - **Mapping Process:**
   - Extracted company names are mapped to S&P 500 tickers using a dictionary that includes both short and long company names.
 - **Fuzzy Matching:**
   - Fuzzy matching (via `rapidfuzz`) ensures accurate mapping even with slight variations in company names.
 
-### Final Output
+# Final Output
 - **Filtered Articles:**
   - Articles are filtered to retain only those with successfully matched tickers.
 - **Resulting Dataset:**
   - The resulting dataset includes **headlines**, **descriptions**, **extracted company names**, **matched company names**, and **stock tickers**.
 
-### Install Required Libraries
+# Install Required Libraries
 Ensure you have the necessary Python libraries installed:
 
 pip install pandas spacy rapidfuzz
 python -m spacy download en_core_web_sm
 
-### Task 3: Financial Data Retrieval
+### Task 3 Financial Data Retrieval
 
 **Objective:** Retrieve key financial metrics and historical stock prices for identified companies.
 
@@ -89,7 +89,7 @@ Save historical prices in historical_prices.csv.
 
 Display metrics distributions (e.g., market capitalization).
 
-# Task 4: Stock Price Prediction
+## Task 4: Stock Price Prediction
 **Import Libraries:**
 Ensure all necessary libraries are imported, such as numpy, pandas, yfinance, tensorflow, matplotlib, seaborn, and scikit-learn.
 
@@ -129,26 +129,26 @@ Overlay predictions for all forecast steps to analyze overall trends.
 **Analyze and Interpret Results:**
 Examine the performance metrics and visualizations to determine how well the model predicts future stock prices and identify areas for improvement.
 
-# TASK 5
+## TASK 5
 
-# Prepare the News Data
+**Prepare the News Data**
 - Ensure that the news dataset contains columns like **Headlines**, **Description**, and **Time**.
 
-# Perform Sentiment Analysis
+**Perform Sentiment Analysis**
 - Apply **VADER** sentiment analysis to classify headlines into sentiment categories.
 
-# Extract Company Names
+**Extract Company Names**
 - Use **SpaCy** to extract potential company names from the news descriptions.
 
-# Validate Stock Tickers
+**Validate Stock Tickers**
 - Check the extracted company names against valid stock tickers using **yfinance**.
 
-# Retrieve Stock Prices
+**Retrieve Stock Prices**
 - Fetch the next-day stock closing price for the associated tickers using **yfinance**.
 
-## Analyze and Visualize
+**Analyze and Visualize**
 - **Correlate** the sentiment categories with stock price changes.
 - Create visualizations, such as **boxplots**, to show the relationships.
 
-## Save Results
+**Save Results**
 - Export the processed data to a CSV file for record-keeping.
