@@ -6,31 +6,31 @@ This project aims to analyze financial news articles and their impact on stock p
 
 Features
 
-Exploratory Data Analysis (EDA):
+# Exploratory Data Analysis (EDA):
 
 Trends over time and word frequency analysis.
 
 Cleaning and preprocessing of datasets.
 
-Stock Ticker Extraction:
+# Stock Ticker Extraction:
 
 Extraction of company names or stock tickers from financial news articles.
 
 Mapping company names to stock tickers using APIs or datasets.
 
-Financial Data Retrieval:
+# Financial Data Retrieval:
 
 Historical price data retrieval using APIs like Yahoo Finance or Alpha Vantage.
 
 Collection of key financial metrics (e.g., market capitalization, P/E ratio).
 
-Stock Price Forecasting:
+# Stock Price Forecasting:
 
 Prediction of stock prices using time-series or machine learning models.
 
 Visualization of historical and forecasted prices.
 
-News Impact Analysis:
+# News Impact Analysis:
 
 Correlation of news tone, topics, and keywords with stock performance.
 
