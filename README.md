@@ -10,30 +10,17 @@ The dataset used in this project consists of financial news articles.
 Download the reuters.headlines file from the following link:
 https://www.kaggle.com/datasets/notlucasp/financial-news-headlines?select=reuters_headlines.csv
 
-Features
+# Requirements
+pandas
+numpy
+matplotlib
+nltk
+spacy
+scikit-learn
+yfinance
+statsmodels
+tensorflow
+requests
+tqdm
 
-# Exploratory Data Analysis (EDA):
-
-Trends over time and word frequency analysis.
-Cleaning and preprocessing of datasets.
-
-# Stock Ticker Extraction:
-
-Extraction of company names or stock tickers from financial news articles.
-Mapping company names to stock tickers using APIs or datasets.
-
-# Financial Data Retrieval:
-
-Historical price data retrieval using APIs like Yahoo Finance or Alpha Vantage.
-Collection of key financial metrics (e.g., market capitalization, P/E ratio).
-
-# Stock Price Forecasting:
-
-Prediction of stock prices using time-series or machine learning models.
-Visualization of historical and forecasted prices.
-
-# News Impact Analysis:
-
-Correlation of news tone, topics, and keywords with stock performance.
-Insights on the influence of news on financial indicators.
 
