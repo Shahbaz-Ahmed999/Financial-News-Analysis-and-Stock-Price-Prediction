@@ -12,15 +12,26 @@ https://www.kaggle.com/datasets/notlucasp/financial-news-headlines?select=reuter
 
 # Requirements
 pandas 
+
 numpy
+
 matplotlib
+
 nltk
+
 spacy
+
 scikit-learn
-yfinance
+
+finance
+
 statsmodels
+
 tensorflow
+
 requests
+
 tqdm
+
 
 
