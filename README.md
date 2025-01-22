@@ -131,19 +131,19 @@ Examine the performance metrics and visualizations to determine how well the mod
 
 # TASK 5
 
-## Prepare the News Data
+# Prepare the News Data
 - Ensure that the news dataset contains columns like **Headlines**, **Description**, and **Time**.
 
-## Perform Sentiment Analysis
+# Perform Sentiment Analysis
 - Apply **VADER** sentiment analysis to classify headlines into sentiment categories.
 
-## Extract Company Names
+# Extract Company Names
 - Use **SpaCy** to extract potential company names from the news descriptions.
 
-## Validate Stock Tickers
+# Validate Stock Tickers
 - Check the extracted company names against valid stock tickers using **yfinance**.
 
-## Retrieve Stock Prices
+# Retrieve Stock Prices
 - Fetch the next-day stock closing price for the associated tickers using **yfinance**.
 
 ## Analyze and Visualize
