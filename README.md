@@ -129,3 +129,26 @@ Overlay predictions for all forecast steps to analyze overall trends.
 **Analyze and Interpret Results:**
 Examine the performance metrics and visualizations to determine how well the model predicts future stock prices and identify areas for improvement.
 
+# TASK 5
+
+## Prepare the News Data
+- Ensure that the news dataset contains columns like **Headlines**, **Description**, and **Time**.
+
+## Perform Sentiment Analysis
+- Apply **VADER** sentiment analysis to classify headlines into sentiment categories.
+
+## Extract Company Names
+- Use **SpaCy** to extract potential company names from the news descriptions.
+
+## Validate Stock Tickers
+- Check the extracted company names against valid stock tickers using **yfinance**.
+
+## Retrieve Stock Prices
+- Fetch the next-day stock closing price for the associated tickers using **yfinance**.
+
+## Analyze and Visualize
+- **Correlate** the sentiment categories with stock price changes.
+- Create visualizations, such as **boxplots**, to show the relationships.
+
+## Save Results
+- Export the processed data to a CSV file for record-keeping.
