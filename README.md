@@ -36,42 +36,30 @@ Visualizations saved or displayed inline.
 **Goal:**  
 *To extract company names or stock tickers from news articles, map the extracted company names to their respective stock tickers using an API or reliable dataset. A dataset from Kaggle (S&P 500 companies) is downloaded, providing a list of stock tickers with corresponding company names.*
 
----
 
-# Data Collection
-- **News Sources:**
-  - News headlines and descriptions are loaded from `reuters_headlines.csv`.
+**Data Collection**
+- **News Sources:** News headlines and descriptions are loaded from `reuters_headlines.csv`.
   - A dataset of S&P 500 companies (`sp500_companies.csv`) is used as the mapping source.
 
-# Named Entity Recognition (NER)
-- **Model Used:**
-  - SpaCy’s NER model is utilized to extract organization names from article descriptions.
+**Named Entity Recognition (NER)**
+- **Model Used:** SpaCy’s NER model is utilized to extract organization names from article descriptions.
 - **Data Cleaning:**
   - Extracted names are cleaned to remove possessives, brackets, and quotes.
 
-# Mapping to Tickers
-- **Mapping Process:**
-  - Extracted company names are mapped to S&P 500 tickers using a dictionary that includes both short and long company names.
+**Mapping to Tickers**
+- **Mapping Process:** Extracted company names are mapped to S&P 500 tickers using a dictionary that includes both short and long company names.
 - **Fuzzy Matching:**
   - Fuzzy matching (via `rapidfuzz`) ensures accurate mapping even with slight variations in company names.
 
-# Final Output
+**Final Output**
 - **Filtered Articles:**
   - Articles are filtered to retain only those with successfully matched tickers.
 - **Resulting Dataset:**
   - The resulting dataset includes **headlines**, **descriptions**, **extracted company names**, **matched company names**, and **stock tickers**.
 
-# Install Required Libraries
-Ensure you have the necessary Python libraries installed:
-
-pip install pandas spacy rapidfuzz
-python -m spacy download en_core_web_sm
-
 ### Task 3 Financial Data Retrieval
 
 **Objective:** Retrieve key financial metrics and historical stock prices for identified companies.
-
-Steps
 
 **Load Dataset:** Read unique_stock_companies.csv for stock tickers.
 
