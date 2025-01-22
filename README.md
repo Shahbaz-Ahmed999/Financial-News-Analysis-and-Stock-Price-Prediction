@@ -117,7 +117,7 @@ Overlay predictions for all forecast steps to analyze overall trends.
 **Analyze and Interpret Results:**
 Examine the performance metrics and visualizations to determine how well the model predicts future stock prices and identify areas for improvement.
 
-## TASK 5 News Analysis and Impact Evaluation (Code has Issues)
+## TASK 5 News Analysis and Impact Evaluation (Code has Issues and is Not Working Properly)
 
 **Prepare the News Data**
 - Ensure that the news dataset contains columns like **Headlines**, **Description**, and **Time**.
